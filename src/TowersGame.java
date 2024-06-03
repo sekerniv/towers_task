@@ -40,7 +40,7 @@ public class TowersGame {
      * @param numOfCubes
      * @return
      */
-    public boolean play(TowersGameMove move) {
+    public boolean play(Move move) {
         if (move.getTower() < 1 || this.numOfTowers < move.getTower() || move.getCubes() < 1) {
             return false;
         }
@@ -64,7 +64,7 @@ public class TowersGame {
         }
     }
 
-    private void playValidMove(TowersGameMove move){
+    private void playValidMove(Move move){
         if (move.getTower() == 1) {
             tower1Cubes -= move.getCubes();
         } else {

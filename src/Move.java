@@ -1,9 +1,9 @@
-public class TowersGameMove {
+public class Move {
 
     private int tower;
     private int numOfCubes;
 
-    public TowersGameMove(int tower, int numOfCubes) {
+    public Move(int tower, int numOfCubes) {
         this.tower = tower;
         this.numOfCubes = numOfCubes;
     }
