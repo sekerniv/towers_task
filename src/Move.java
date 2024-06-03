@@ -1,11 +1,11 @@
 public class Move {
 
     private int tower;
-    private int numOfCubes;
+    private int cubes;
 
-    public Move(int tower, int numOfCubes) {
+    public Move(int tower, int cubes) {
         this.tower = tower;
-        this.numOfCubes = numOfCubes;
+        this.cubes = cubes;
     }
 
     public int getTower() {
@@ -17,15 +17,15 @@ public class Move {
     }
 
     public int getCubes() {
-        return numOfCubes;
+        return cubes;
     }
 
-    public void setNumOfCubes(int numOfCubes) {
-        this.numOfCubes = numOfCubes;
+    public void setCubes(int numOfCubes) {
+        this.cubes = numOfCubes;
     }
 
     @Override
     public String toString() {
-        return "[tower=" + tower + ", numOfCubes=" + numOfCubes + "]";
+        return "[tower=" + tower + ", cubes=" + cubes + "]";
     }
 }

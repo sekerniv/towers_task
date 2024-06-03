@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class TowersGame {
     private static int maxCubes = 10;
-    int curPlayer;
+    private int curPlayer;
 
     // We're only doing 2 towers for now, because it's annoying to implement without knowing "arrays"
     private int tower1Cubes;
@@ -36,8 +36,7 @@ public class TowersGame {
 
     /**
      * Will only pass the turn if the game is not over
-     * @param towerFrom
-     * @param numOfCubes
+     * @param move
      * @return
      */
     public boolean play(Move move) {
